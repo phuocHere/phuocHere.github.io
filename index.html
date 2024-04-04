@@ -3,18 +3,71 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Chat App</title>
+  <title>Portfolio của Tên Của Bạn</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="chat-container">
-    <ul id="chat-list"></ul>
-    <input type="text" id="message-input" placeholder="Type your message...">
-    <button id="send-btn">Send</button>
-  </div>
 
-  <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.4.0/firebase-database.js"></script>
-  <script src="script.js"></script>
+  <header>
+    <h1>Portfolio của Tên Của Bạn</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#services">Dịch vụ</a></li>
+        <li><a href="#projects">Dự án</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about">
+    <div class="container">
+      <h2>Giới thiệu</h2>
+      <p>Xin chào! Tôi là <strong>Tên của bạn</strong>, một <strong>Chức danh hoặc lĩnh vực bạn làm việc</strong>. Tôi đam mê và luôn tìm kiếm cơ hội để phát triển và thách thức bản thân.</p>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="container">
+      <h2>Dịch vụ</h2>
+      <ul>
+        <li>Thiết kế web và ứng dụng</li>
+        <li>Phát triển phần mềm</li>
+        <li>Tối ưu hóa công việc và quy trình</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Dự án</h2>
+      <div class="project">
+        <h3>Tên dự án 1</h3>
+        <p>Mô tả ngắn về dự án này.</p>
+      </div>
+      <div class="project">
+        <h3>Tên dự án 2</h3>
+        <p>Mô tả ngắn về dự án này.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Liên hệ</h2>
+      <p>Liên hệ với tôi để bắt đầu một dự án mới!</p>
+      <form action="submit.php" method="post">
+        <input type="text" name="name" placeholder="Họ và tên" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Tin nhắn của bạn" required></textarea>
+        <button type="submit">Gửi</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Portfolio của Tên Của Bạn. Đã đăng ký bản quyền.</p>
+  </footer>
+
 </body>
 </html>
